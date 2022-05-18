@@ -1,2 +1,2 @@
 # Rust
-Playground for the Rust programming language.
+Playground for testing the Rust programming language.
