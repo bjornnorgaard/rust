@@ -2,6 +2,6 @@ version: "3.8"
 
 services:
   app:
-    image: rust/helloworld:latest
+    image: rust/hello_world:latest
     build:
       context: .

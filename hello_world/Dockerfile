@@ -10,7 +10,7 @@ RUN rm -r src
 COPY . .
 RUN cargo build --release
 
-FROM rust:1.67.1-alpine3.17
+FROM scratch
 
 WORKDIR app
 COPY --from=build app/target/release/hello_world .
