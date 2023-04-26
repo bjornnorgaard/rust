@@ -12,7 +12,7 @@ RUN cargo build --release
 
 FROM scratch
 
-WORKDIR app
+WORKDIR /app
 COPY --from=build app/target/release/hello_world .
 
 CMD ["./hello_world"]
