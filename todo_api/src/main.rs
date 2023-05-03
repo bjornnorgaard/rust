@@ -7,7 +7,7 @@ mod todos;
 
 #[main]
 async fn main() -> Result<(), Box<dyn Error>> {
-    dotenv().expect("failed to load dotenv");
+    dotenv().expect(".env file loaded");
 
     let service = todos::Service::new().await;
     service.create("Walk the dog").await?;
