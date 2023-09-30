@@ -7,7 +7,7 @@ use rand::Rng;
 fn main() {
     let number: u8 = rand::thread_rng().gen_range(0..100);
 
-    println!("Guess an number between 1 and 100! ({})", number);
+    println!("Guess an number between 1 and 100!");
 
     loop {
         let mut guess = String::new();
